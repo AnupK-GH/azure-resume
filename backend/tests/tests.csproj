@@ -1,21 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-
+    <TargetFramework>net6.0</TargetFramework>
+    <AzureFunctionsVersion>v4</AzureFunctionsVersion>
+		<RootNamespace>azure-resume</RootNamespace>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.10.0-release-20210330-02"/>
-    <PackageReference Include="xunit" Version="2.4.1"/>
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3"/>
-    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.CosmosDB" Version="3.0.10" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Host.Storage" Version="4.0.4" />
+		<PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.1.1" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.0-preview-20220426-02" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\api\azure-resume.csproj" />
+    <ProjectReference Include="..\backend\api\azure-resume.csproj" />
   </ItemGroup>
 
 </Project>

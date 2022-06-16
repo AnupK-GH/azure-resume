@@ -9,3 +9,8 @@ My Azure Cloud Resume Challenge!
 
 ## Second Steps
 - create cosmosDB account
+- create Function API
+- add bindings
+
+## Third step
+- run into a bunch of issues and fix them :)

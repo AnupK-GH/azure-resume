@@ -33,7 +33,7 @@ namespace Company.Function
                 PartitionKey = "1")] out Counter updatedCounter,
             ILogger log)
         {
-
+            //Counter gets updated
             log.LogInformation("GetResumeCounter was triggered.");
 
             updatedCounter = counter;

@@ -1,1 +1,4 @@
-# Your frontend live here
+# Frontend information
+
+- Contains all of the website information
+
